@@ -1,0 +1,6 @@
+<button *ngIf="button.sign != '0'; else ZeroButton" (click)="onNumericButtonClick(button.sign)">{{ button.sign }}</button>
+
+<ng-template #ZeroButton>
+  <button class="zeroButton" (click)="onNumericButtonClick(button.sign)">{{ button.sign }}</button>
+</ng-template>
+

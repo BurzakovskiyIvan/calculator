@@ -1,0 +1,22 @@
+@import "../../constants//settings.less";
+
+button {
+  width: @button-width;
+  height: @button-height;
+  background-color: @numeric-button-background-color;
+  color: @numeric-button-text-color;
+  font-size: 1.3em;
+  border: @button-border;
+
+  &:hover {
+    background-color: @numeric-button-background-color-hover;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.zeroButton {
+  width: @buttons-field-width;
+}

@@ -1,0 +1,25 @@
+@import "../../constants/settings.less";
+
+.wrapper {
+  width: @calculator-width;
+  height: @calculator-height;
+  position: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  app-output-field {
+    display: block;
+    width: @output-field-width;
+    height: @output-field-height;
+    color: @output-field-text-color;
+    background-color: @output-field-background-color;
+  }
+
+  app-buttons-field {
+    display: block;
+    width: @buttons-field-width;
+    height: @buttons-field-height;
+    position: flex;
+    flex-direction: column;
+  }
+}
