@@ -31,16 +31,7 @@ export class ActionsService {
       case '=':
         this.equal();
         break;
-      case '+':
-        this.updateOutput(button);
-        break;
-      case '-':
-        this.updateOutput(button);
-        break;
-      case '/':
-        this.updateOutput(button);
-        break;
-      case '*':
+      default:
         this.updateOutput(button);
         break;
     }
